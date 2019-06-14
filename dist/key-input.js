@@ -65,6 +65,8 @@ System.register("index", ["vue", "vue-class-component"], function (exports_3, co
                         },
                         keys: []
                     };
+                    _this.listening = false;
+                    _this.modified = false;
                     return _this;
                 }
                 Object.defineProperty(KeyInput.prototype, "computedString", {

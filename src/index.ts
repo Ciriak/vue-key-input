@@ -19,12 +19,24 @@ export default class KeyInput extends Vue {
         },
         keys: []
     }
+    /**
+     * True if we are listening for use input
+     */
+    listening: boolean = false;
+    /**
+     * True if the entry has been modified during the listening
+     */
+    modified: boolean = false;
+
+    /**
+     * Generate the computed string for the key input
+     */
     get computedString(): string {
         let computedString = "";
         // Loop through each accelerator
         for (const acceleratorName in this.value.accelerators) {
             if (this.value.accelerators.hasOwnProperty(acceleratorName)) {
-                const accelerator = this.value.accelerators[acceleratorName];
+                const accelerator: boolean = this.value.accelerators[acceleratorName];
                 // if the accelerator is enabled
                 if (accelerator) {
                     // Convert accelerator
