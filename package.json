@@ -2,9 +2,10 @@
   "name": "vue-key-input",
   "version": "1.0.0",
   "description": "Key input component for vuejs",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,8 @@
     "vue": "^2.6.10"
   },
   "devDependencies": {
+    "typescript": "^3.5.2",
+    "vue-class-component": "^7.1.0",
     "webpack": "^4.34.0"
   }
 }
