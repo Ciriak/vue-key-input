@@ -92,12 +92,12 @@ System.register("index", ["vue", "vue-class-component"], function (exports_3, co
                 });
                 KeyInput = __decorate([
                     vue_class_component_1.default({
-                        template: '<button @click="onClick">Click!</button>'
+                        template: '<div>LOADED</div>'
                     })
                 ], KeyInput);
                 return KeyInput;
             }(vue_1.default));
-            exports_3("default", KeyInput);
+            exports_3("KeyInput", KeyInput);
         }
     };
 });

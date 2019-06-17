@@ -3,10 +3,9 @@ import Component from 'vue-class-component'
 import IKeyInputValue from './Interfaces/KeyInputValue';
 
 @Component({
-    // Toutes les options de composant sont autorisées ici.
-    template: '<button @click="onClick">Click!</button>'
+    template: '<div>LOADED</div>'
 })
-export default class KeyInput extends Vue {
+export class KeyInput extends Vue {
     value: IKeyInputValue = {
         accelerators: {
             command: false,
