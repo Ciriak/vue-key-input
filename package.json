@@ -2,7 +2,7 @@
   "name": "vue-key-input",
   "version": "1.0.0",
   "description": "Key input component for vuejs",
-  "main": "index.js",
+  "main": "key-input.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsc -w"
