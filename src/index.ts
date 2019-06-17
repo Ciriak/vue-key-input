@@ -5,7 +5,7 @@ import IKeyInputValue from './Interfaces/KeyInputValue';
 @Component({
     template: '<div>LOADED</div>'
 })
-export class KeyInput extends Vue {
+export class VueKeyInput extends Vue {
     value: IKeyInputValue = {
         accelerators: {
             command: false,

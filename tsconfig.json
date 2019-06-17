@@ -1,18 +1,12 @@
 {
     "compilerOptions": {
-        "target": "es6",
+        // alignement avec le support navigateur de Vue
+        "target": "es5",
+        // activation de la déduction stricte pour les propriétés de données sur `this`
         "strict": true,
-        "module": "amd",
+        // si vous utilisez webpack 2+ ou rollup, permettre le tree shaking :
+        "module": "es2015",
         "moduleResolution": "node",
-        "noImplicitAny": true,
-        "removeComments": true,
-        "experimentalDecorators": true,
-        "outFile": "dist/key-input.js"
-    },
-    "include": [
-        "src/**/*"
-    ],
-    "files": [
-        "src/index.ts"
-    ]
+        "experimentalDecorators": true
+    }
 }
